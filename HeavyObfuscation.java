@@ -9,7 +9,6 @@ class X {
     }
 
     static void d(char c) {
-        // Dynamically load and invoke methods to further obfuscate printing
         try {
             java.lang.reflect.Method m = System.out.getClass().getMethod("print", char.class);
             m.invoke(System.out, c);
